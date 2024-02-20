@@ -1,0 +1,127 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  background-image: url('background.jpg'); /* Ganti 'background.jpg' dengan URL atau path ke gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek modern */
+}
+
+header h2 {
+  font-size: 2.5rem; /* Menyesuaikan ukuran teks agar lebih menonjol */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Memilih font yang lebih modern */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+  letter-spacing: 2px; /* Menambahkan spasi antara huruf */
+  animation: blink 1.5s infinite; /* Menambahkan animasi berkedip */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Gunakan rgba() untuk memberikan transparansi pada latar belakang */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Menyesuaikan jarak antara label dengan elemen input */
+}
+
+input[type="number"],
+input[type="text"],
+button {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Menambah border agar elemen input terlihat lebih jelas */
+  border-radius: 4px; /* Menambah sudut yang lebih lembut */
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #ffd700; /* Warna kuning saat dihover */
+}

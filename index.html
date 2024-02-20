@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penghitungan Suara TPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h2>Pemilu Desa</h2>
+  </header>
+  <main>
+    <section id="result" style="display: none;">
+      <h2>Hasil Penghitungan Suara TPS</h2>
+      <p id="tpsResult"></p>
+    </section>
+    <section id="inputSection">
+      <h2>Input Hasil Pemilihan</h2>
+      <form id="inputForm">
+        <label for="tps">Nomor TPS:</label>
+        <input type="number" id="tps" name="tps" required>
+        <label for="namaKandidat">Nama Kandidat:</label>
+        <input type="text" id="namaKandidat" name="namaKandidat" required>
+        <label for="jumlahPemilih">Jumlah Pemilih Terdaftar:</label>
+        <input type="number" id="jumlahPemilih" name="jumlahPemilih" required>
+        <label for="suaraSah">Suara Sah:</label>
+        <input type="number" id="suaraSah" name="suaraSah" required>
+        <label for="suaraBatal">Suara Batal:</label>
+        <input type="number" id="suaraBatal" name="suaraBatal" required>
+        <button type="submit">Simpan</button>
+      </form>
+      <button id="deleteButton">Hapus Semua Data</button>
+      <button id="exportButton">Ekspor ke Excel</button> <!-- Tambahkan tombol ekspor -->
+    </section>
+    <section id="realCount">
+      <h2>Real Count</h2>
+      <table id="realCountTable" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nomor TPS</th>
+            <th scope="col">Nama Kandidat</th>
+            <th scope="col">Jumlah Pemilih Terdaftar</th>
+            <th scope="col">Suara Sah</th>
+            <th scope="col">Suara Batal</th>
+          </tr>
+        </thead>
+        <tbody id="realCountBody">
+          <tr>
+            <td>1</td>
+            <td>Muhammad Nurul Azman</td>
+            <td>100</td>
+            <td>80</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Azman</td>
+            <td>120</td>
+            <td>90</td>
+            <td>3</td>
+          </tr>
+          <!-- You can dynamically populate this body using JavaScript -->
+        </tbody>
+      </table>
+
+    </section>
+    <section id="quickCount">
+      <h2>Quick Count</h2>
+      <p id="quickCountData">Loading...</p>
+    </section>
+  </main>
+  <footer>
+    <p class="link"><a href="https://193tb4l3.github.io/Testimoni/" target="_blank">Copyright 2024 Mursatas IT</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
