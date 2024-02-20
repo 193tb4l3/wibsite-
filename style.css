@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 
+/* Gaya umum */
 body {
+  font-size: 16px;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #333;
@@ -124,4 +126,45 @@ footer {
 
 .link a:hover {
   color: #ffd700; /* Warna kuning saat dihover */
+}
+
+/* Gaya untuk layar mobile */
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  button,
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+}
+
+/* Tata letak responsif */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-section,
+.result-section {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
